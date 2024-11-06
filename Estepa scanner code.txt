@@ -1,0 +1,78 @@
+
+package sari.sari.store.inventory;
+
+import java.util.Scanner;
+
+
+public class SariSariStoreInventory {
+
+    
+    public static void main(String[] args) {
+        
+        String name;
+        
+         Scanner scanner;
+         scanner = new Scanner (System.in);
+         
+        System.out.print("Enter the product name: ");
+        name = scanner.nextLine();
+        
+        double code;
+        
+        System.out.print("Enter the product code: ");
+        code = scanner.nextDouble();
+        
+        int qty;
+        
+        System.out.print("Enter the quantity in stock: ");
+        qty = scanner.nextInt();
+        
+        int price;
+        
+        System.out.print("Enter the product price per unit: ");
+        price = scanner.nextInt();
+        
+        String supplier;
+        
+        System.out.print("Enter the supplier name: ");
+        supplier = scanner.nextLine();
+        scanner.nextLine();
+        
+        String exp;
+        
+        System.out.print("Enter the product expiration date (dd-mm-yy): ");
+        exp = scanner.nextLine();
+        
+        String sold;
+        
+        System.out.print("Enter the number of products sold today: ");
+        sold = scanner.nextLine();
+        
+        int discount;
+        
+        System.out.print("Enter the discount percentage(e.g., 10 for 10%): ");
+        discount = scanner.nextInt();
+        
+        int threshold;
+        
+        System.out.print("Enter the reorder threshold quantity: ");
+        threshold = scanner.nextInt();
+        scanner.nextLine();
+        String loc;
+        System.out.print("Enter the store location: ");
+        loc = scanner.nextLine();
+        
+        
+         System.out.println("------- SARI-SARI STORE ------ " );
+         System.out.println("Enter the product name: " + name);
+         System.out.println("Enter the product code: " + code);
+         System.out.println("Enter the quantity in stock: " + qty);
+         System.out.println("Enter the product price per unit: " + price);
+         System.out.println("Enter the supplier name: " + supplier);     
+         System.out.println("Enter the product expiration date (dd-mm-yy): " + exp);
+         System.out.println("Enter the discount percentage(e.g., 10 for 10%): " + discount);
+         System.out.println("Enter the reorder threshold quantity: " + threshold);
+         System.out.println("Enter the store location: " + loc);
+    }
+    
+}
